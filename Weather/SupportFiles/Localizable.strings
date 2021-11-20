@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  Weather
+
+  Created by Lam Trinh Tran Truc on 19-November-2021.
+  
+*/
+// Home
+"kHomeHeaderTitle"                  = "Weather Forecast";
+"kHomeSearchBarPlaceHolder"         = "Please input at least 3 characters of City";
+
+// API Request
+"kAPIRequestResponseWithErrorCode" = "Error = %@.\n Please try again.";
+"kAPIRequestResponseUnknownError"  = "Error = Unknown.\n Please try again.";
+
+// BaseViewController
+"kBaseViewControllerErrorAlertTitle"    = "Error";
+"kBaseViewControllerOkayButtonTitle"    = "OK";
+
+// Weather Data
+"kWeatherInfoCellDisplayData"       = "%@: %@";
+"kWeatherInfoAverageTemperature"    = "%@°C";
+"kWeatherInfoNotAvailable"          = "N/A";
+
+// Error Message
+"kErrorMessageSearchCityMininumCharacters" = "Please input at least %@ characters in Search text (City)";
