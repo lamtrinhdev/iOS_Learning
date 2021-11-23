@@ -5,6 +5,7 @@
 //  Created by Lam Trinh Tran Truc on 20-November-2021.
 //
 
+import Foundation
 import RxSwift
 import Alamofire
 
