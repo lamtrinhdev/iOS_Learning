@@ -54,7 +54,9 @@ class HomeViewController: BaseViewController {
             .skip(1)
             .subscribe(onNext: { [weak self] data in
                 guard let self = self else { return }
-                self.weatherInfoTableView.reloadData()
+                DispatchQueue.main.async {
+                    self.weatherInfoTableView.reloadData()
+                }
             })
             .disposed(by: disposeBag)
     }

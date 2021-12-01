@@ -73,13 +73,13 @@ class BaseViewController: UIViewController {
     }
 
     private func showLoading(isShowing: Bool) {
-        if isShowing {
-            self.present(loadingVC, animated: true, completion: nil)
-            self.loadingVC.startLoading()
-        } else {
-            loadingVC.stopLoading()
-            loadingVC.dismiss(animated: true, completion: nil)
-        }
+//        if isShowing {
+//            self.present(loadingVC, animated: true, completion: nil)
+//            self.loadingVC.startLoading()
+//        } else {
+//            loadingVC.stopLoading()
+//            loadingVC.dismiss(animated: true, completion: nil)
+//        }
     }
 
 }

@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 import RxSwift
+import RxAlamofire
 
 protocol WeatherService {
     func request<T: Codable>(
@@ -34,9 +35,9 @@ final class WeatherWebService: WeatherService {
         urlRequest.httpMethod = method.rawValue
         urlRequest.setValue(contentType, forHTTPHeaderField: kDefaultContentTypeHTTPHeaderField)
 
-        for (headerField, headerValue) in headers {
-            urlRequest.setValue(headerValue, forHTTPHeaderField: headerField)
-        }
+//        for (headerField, headerValue) in headers {
+//            urlRequest.setValue(headerValue, forHTTPHeaderField: headerField)
+//        }
 
         if let parameters = parameters {
             do {
@@ -49,20 +50,23 @@ final class WeatherWebService: WeatherService {
         let result = Observable<T>.create { observer -> Disposable in
             Log.debug(message: "URLRequest: \(urlRequest)")
 
-            let request = Alamofire
-                .request(urlRequest)
-                .validate()
-                .responseObject { (response: DataResponse<T>) in
-                    Log.debug(message: "Services:\(response)")
-                    if let value = response.result.value {
-                        observer.onNext(value)
-                    }
-                    if let error = response.result.error {
-                        observer.onError(error)
-                    }
-                    observer.on(.completed)
-                }
-            return Disposables.create(with: {request.cancel()})
+//            let request = RxAlamofire
+//                .request(urlRequest)
+//                .validate()
+//                .response()
+//                .responseObject { (response: DataResponse<T>) in
+//                    Log.debug(message: "Services:\(response)")
+//                    if let value = response.result.value {
+//                        observer.onNext(value)
+//                    }
+//                    if let error = response.result.error {
+//                        observer.onError(error)
+//                    }
+//                    observer.on(.completed)
+//                }
+//            return Disposables.create(with: {request.cancel()})
+//            observer.on(.completed)
+            return Disposables.create()
         }
 
         return result

@@ -18,7 +18,7 @@ class HomeViewModel: BaseViewModel {
     // Request Weather Info with city
     func requestWeatherInfo(city: String) {
         // Init WeatherAPI
-        let api = WeatherAPI(service: self.service)
+        let network = Network<WeatherDataResponseModel>()
         // Show Indicator and start animation
         showLoading.accept(true)
 
@@ -29,7 +29,7 @@ class HomeViewModel: BaseViewModel {
         ]
 
         // Start request
-        api.startRequestWeatherInfo(queries: queries)
+        network.getWeather(.daily, queries)
             .subscribe { [weak self] data in
                 guard let self = self else { return }
                 self.showLoading.accept(false)
