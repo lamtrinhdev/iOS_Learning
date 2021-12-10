@@ -23,6 +23,7 @@
 		E4114B192748047D0008136E /* WeatherInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4114B182748047D0008136E /* WeatherInfoModel.swift */; };
 		E4114B1B2748048B0008136E /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4114B1A2748048B0008136E /* ErrorModel.swift */; };
 		E4114B232748079D0008136E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4114B222748079D0008136E /* HomeViewModel.swift */; };
+		E4711C2127585AB0007B67C3 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4711C2027585AB0007B67C3 /* Application.swift */; };
 		E4A1F3922749040D00343E46 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1F3912749040D00343E46 /* Reachability.swift */; };
 		E4A1F3942749042700343E46 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1F3932749042700343E46 /* Log.swift */; };
 		E4A1F3962749046200343E46 /* CommonEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1F3952749046200343E46 /* CommonEnum.swift */; };
@@ -58,6 +59,7 @@
 		E4114B182748047D0008136E /* WeatherInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoModel.swift; sourceTree = "<group>"; };
 		E4114B1A2748048B0008136E /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		E4114B222748079D0008136E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E4711C2027585AB0007B67C3 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		E4A1F3912749040D00343E46 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		E4A1F3932749042700343E46 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		E4A1F3952749046200343E46 /* CommonEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEnum.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		E4114AEC274742BE0008136E /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				E4711C1F27585AA1007B67C3 /* Application */,
 				E4114B07274800F50008136E /* Base */,
 				E4114B012747FFB70008136E /* Flows */,
 				E4114B172748046C0008136E /* Domain */,
@@ -238,6 +241,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		E4711C1F27585AA1007B67C3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				E4711C2027585AB0007B67C3 /* Application.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		E4CBE4C027563B420082E97B /* Entries */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,6 +343,7 @@
 			files = (
 				E4ED6DB62757191E006DAD74 /* WeatherServices.swift in Sources */,
 				E4114B1B2748048B0008136E /* ErrorModel.swift in Sources */,
+				E4711C2127585AB0007B67C3 /* Application.swift in Sources */,
 				E4114B232748079D0008136E /* HomeViewModel.swift in Sources */,
 				E4A1F3942749042700343E46 /* Log.swift in Sources */,
 				E4A1F3922749040D00343E46 /* Reachability.swift in Sources */,
