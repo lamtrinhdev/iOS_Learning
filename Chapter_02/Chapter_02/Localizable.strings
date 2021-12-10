@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Chapter_02
+
+  Created by Lam Trinh Tran Truc on 10-December-2021.
+  
+*/
+
+// Weather Data
+"kWeatherInfoCellDisplayData"       = "%@: %@";
+"kWeatherInfoAverageTemperature"    = "%@°C";
+"kWeatherInfoNotAvailable"          = "N/A";
